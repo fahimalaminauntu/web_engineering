@@ -1,0 +1,218 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    background-color: black;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+h1,
+h3,
+a,
+sub {
+    color: white;
+    font-weight: 300;
+}
+
+h1 {
+    margin-right: 20px;
+}
+
+
+.items-dropdown,
+.offer-dropdown {
+    position: relative;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+.dropdown-menu1,
+.dropdown-menu2 {
+    width: 140px;
+    display: none;
+    position: absolute;
+    background-color: white;
+    list-style-type: none;
+    padding: 8px 0;
+    margin: 0;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    z-index: 1000;
+}
+
+.items-dropdown:hover .dropdown-menu1,
+.offer-dropdown:hover .dropdown-menu2 {
+    display: block;
+}
+
+.dropdown-menu1 li a,
+.dropdown-menu2 li a {
+    color: black;
+    text-decoration: none;
+    display: block;
+    padding: 8px 15px;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-menu1 li a:hover,
+.dropdown-menu2 li a:hover {
+    background-color: #f0f0f0;
+}
+
+
+#searchButton {
+    color: black;
+    background-color: yellow;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+#cartIcon {
+    color: white;
+    position: relative;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+#cartIcon sub {
+    position: absolute;
+    top: -8px;
+    right: -10px;
+    font-size: 0.7rem;
+    color: white;
+    background: red;
+    border-radius: 50%;
+    padding: 1px 5px;
+}
+
+
+#section1 {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 50px 10px 0 5px;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.productCard {
+    background-color: white;
+    width: 22%;
+    box-shadow: 0px 4px 4px rgb(226, 222, 222);
+    padding: 10px;
+    border-radius: 6px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.productCard:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.productCard img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.productCard:hover img {
+    transform: scale(1.1);
+}
+
+
+.productCard h3,
+.productCard h4 {
+    color: black;
+}
+
+
+.footer {
+    background-color: black;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.footerText {
+    color: white;
+    text-align: center;
+}
+
+.backgroundImage {
+    height: 90vh;
+    background-image: url('https://thumbs.dreamstime.com/b/special-offer-37086976.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.oferButton {
+    background-color: green;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.oferButton:hover {
+    background-color: darkgreen;
+}
+
+@media (max-width: 1024px) {
+    .productCard {
+        width: 45%;
+    }
+}
+
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+        gap: 10px;
+    }
+
+    h1 {
+        margin-bottom: 10px;
+    }
+
+    .items-dropdown,
+    .offer-dropdown {
+        margin: 0;
+    }
+
+    #section1 {
+        flex-direction: column;
+        align-items: center;
+        margin: 20px 0 0 0;
+    }
+
+    .productCard {
+        width: 90%;
+    }
+
+    .backgroundImage {
+        height: 50vh;
+    }
+}
