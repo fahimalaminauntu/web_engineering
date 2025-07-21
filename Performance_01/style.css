@@ -1,0 +1,139 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fffaf0;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #deb887;
+    color: black;
+    position: relative;
+}
+
+
+.header-buttons {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.btn {
+    background-color: #f5deb3;
+    border: none;
+    padding: 8px 15px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #d2a06f;
+    color: white;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.center-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 30px 20px;
+    gap: 20px;
+}
+
+.menu {
+    background-color: #ffe4c4;
+    padding: 20px;
+    max-width: 400px;
+    flex: 1 1 300px;
+}
+
+.image {
+    flex: 1 1 300px;
+    max-width: 450px;
+}
+
+.image img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.review-section {
+    padding: 20px;
+    background-color: #f0f8ff;
+    max-width: 800px;
+    margin-bottom: 50px;
+    width: 90%;
+}
+
+.review-section h2 {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label,
+input,
+textarea,
+select {
+    margin-bottom: 10px;
+    font-size: 1em;
+}
+
+input,
+textarea,
+select {
+    padding: 8px;
+    width: 100%;
+}
+
+input[type="submit"] {
+    background-color: #deb887;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+input[type="submit"]:hover {
+    background-color: #d2a06f;
+}
+
+@media (max-width: 768px) {
+    .center-content {
+        flex-direction: column;
+    }
+
+    .menu,
+    .image {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-buttons {
+        position: static;
+        margin-top: 10px;
+        justify-content: center;
+    }
+}

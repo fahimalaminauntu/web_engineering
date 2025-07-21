@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coffee Shop</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header>
+        <h1>Auntu's Coffee Shop</h1>
+        <div class="header-buttons">
+            <button class="btn">Cart 🛒</button>
+            <button class="btn">Account 👤</button>
+        </div>
+    </header>
+
+    <main>
+        <div class="center-content">
+            <div class="menu">
+                <ol type="I">
+                    <li>Coffee
+                        <ul>
+                            <li>Cappuccino ☕
+                                <ul>
+                                    <li>With foam?</li>
+                                    <li>More sugar?</li>
+                                </ul>
+                            </li>
+                            <li>Expresso
+                                <ol type="I" start="4">
+                                    <li>Robusta</li>
+                                    <li>Arabica</li>
+                                    <li>Bourbon</li>
+                                </ol>
+                            </li>
+                            <li>Americano</li>
+                        </ul>
+                    </li>
+                    <li>Cakes
+                        <ul>
+                            <li>Chocolate 🍫</li>
+                            <li>Vanilla 🍰</li>
+                            <li>Red Velvet 🍰</li>
+                        </ul>
+                    </li>
+                    <li>Fruit Salad
+                        <ul>
+                            <li>Apple 🍎</li>
+                            <li>Strawberry 🍓</li>
+                            <li>Water Melon 🍉</li>
+                        </ul>
+                    </li>
+                </ol>
+            </div>
+
+            <div class="image">
+                <img src="Coffee.jpg" alt="Cafe Image" />
+            </div>
+        </div>
+
+        <div class="review-section">
+            <h2>Customer Reviews</h2>
+            <form action="#" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required />
+
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender" required>
+                    <option value="">Select</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Other">Other</option>
+                </select>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required />
+
+                <label for="review">Review Description:</label>
+                <textarea id="review" name="review" rows="4" required></textarea>
+
+                <input type="submit" value="Submit Review" />
+            </form>
+        </div>
+    </main>
+</body>
+
+</html>
