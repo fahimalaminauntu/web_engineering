@@ -3,88 +3,211 @@
 
 <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Coffee Shop</title>
+    <title>Shop With Me</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
     <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-    <header>
-        <h1>Auntu's Coffee Shop</h1>
-        <div class="header-buttons">
-            <button class="btn">Cart 🛒</button>
-            <button class="btn">Account 👤</button>
+    <nav>
+        <h1>Shop With Auntu</h1>
+        <a href="https://github.com/fahimalaminauntu">Account</a>
+        <div class="items-dropdown">
+            <h3 class="menu-header">Items</h3>
+            <ul class="dropdown-menu1">
+                <li><a href="#">Red Apple 🍎</a></li>
+                <li><a href="#">Orange 🍊</a></li>
+                <li><a href="#">Banana 🍌</a></li>
+            </ul>
         </div>
-    </header>
+        <div class="offer-dropdown">
+            <h3 class="menu-header">Offer</h3>
+            <ul class="dropdown-menu2">
+                <li><a href="#">15% Discount Products</a></li>
+                <li><a href="#">20% Discount Products</a></li>
+                <li><a href="#">30% Discount Products 🔥</a></li>
+            </ul>
+        </div>
+        <div>
+            <input type="text" placeholder="Type your item" />
+            <button id="searchButton">Search</button>
+        </div>
+        <div>
+            <i class="fa-solid fa-cart-shopping" id="cartIcon"><sub id="cartCount">0</sub></i>
+        </div>
+    </nav>
 
-    <main>
-        <div class="center-content">
-            <div class="menu">
-                <ol type="I">
-                    <li>Coffee
-                        <ul>
-                            <li>Cappuccino ☕
-                                <ul>
-                                    <li>With foam?</li>
-                                    <li>More sugar?</li>
-                                </ul>
-                            </li>
-                            <li>Espresso
-                                <ol type="I" start="4">
-                                    <li>Robusta</li>
-                                    <li>Arabica</li>
-                                    <li>Bourbon</li>
-                                </ol>
-                            </li>
-                            <li>Americano</li>
-                        </ul>
-                    </li>
-                    <li>Cakes
-                        <ul>
-                            <li>Chocolate 🍫</li>
-                            <li>Vanilla 🍰</li>
-                            <li>Red Velvet 🍰</li>
-                        </ul>
-                    </li>
-                    <li>Fruit Salad
-                        <ul>
-                            <li>Apple 🍎</li>
-                            <li>Strawberry 🍓</li>
-                            <li>Watermelon 🍉</li>
-                        </ul>
-                    </li>
-                </ol>
+    <section class="backgroundImage">
+        <button class="OrderNowButton">
+            <h3>Order Now</h3>
+        </button>
+    </section>
+
+    <section id="section1">
+        <h2 class="section-header">Popular Products:</h2>
+        <div class="section-product">
+            <div class="productCard">
+                <img src="https://www.jiomart.com/images/product/original/590004487/apple-indian-6-pcs-pack-approx-750-g-950-g-product-images-o590004487-p590004487-0-202501031744.jpg?im=Resize=(420,420)"
+                    alt="Red Apple" />
+                <hr />
+                <div class="product_info">
+                    <div class="namePrice">
+                        <h3 class="productName">Red Apple</h3>
+                        <div class="priceRow">
+                            <h4 class="oldPrice">$2.99</h4>
+                            <h4 class="newPrice">$2.50</h4>
+                        </div>
+                    </div>
+                    <i class="fa-solid fa-cart-shopping fa-xl add-to-cart"></i>
+                </div>
             </div>
-
-            <div class="image">
-                <img src="Coffee.jpg" alt="Cafe Image" />
+            <div class="productCard">
+                <img src="https://i.etsystatic.com/14438497/r/il/cf914c/1263767806/il_300x300.1263767806_m1yi.jpg"
+                    alt="Dragon Fruit" />
+                <hr />
+                <div class="product_info">
+                    <div class="namePrice">
+                        <h3 class="productName">Dragon Fruit</h3>
+                        <div class="priceRow">
+                            <h4 class="oldPrice">$4.99</h4>
+                            <h4 class="newPrice">$3.50</h4>
+                        </div>
+                    </div>
+                    <i class="fa-solid fa-cart-shopping fa-xl add-to-cart"></i>
+                </div>
+            </div>
+            <div class="productCard">
+                <img src="https://slyce-product.s3.ap-south-1.amazonaws.com/Exotic%20Fruits_null_Alphonso%20Mango%20One%20Dozen%20Box%20from%20Devgarh_image_2025-03-06T08%3A27%3A59.916928216.png"
+                    alt="Yammy Mango" />
+                <hr />
+                <div class="product_info">
+                    <div class="namePrice">
+                        <h3 class="productName">Yammy Mango</h3>
+                        <div class="priceRow">
+                            <h4 class="oldPrice">$1.99</h4>
+                            <h4 class="newPrice">$1.50</h4>
+                        </div>
+                    </div>
+                    <i class="fa-solid fa-cart-shopping fa-xl add-to-cart"></i>
+                </div>
+            </div>
+            <div class="productCard">
+                <img src="https://www.jaimefruitsetlegumes.ca/wp-content/uploads/2019/09/Fiche-aliment-Images-36-700x700.png"
+                    alt="Orange" />
+                <hr />
+                <div class="product_info">
+                    <div class="namePrice">
+                        <h3 class="productName">Orange</h3>
+                        <div class="priceRow">
+                            <h4 class="oldPrice">$2.99</h4>
+                            <h4 class="newPrice">$2.50</h4>
+                        </div>
+                    </div>
+                    <i class="fa-solid fa-cart-shopping fa-xl add-to-cart"></i>
+                </div>
             </div>
         </div>
+    </section>
 
-        <div class="review-section">
-            <h2>Customer Reviews</h2>
-            <form action="ind.php" method="post">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required />
-
-                <label for="gender">Gender:</label>
-                <select id="gender" name="gender" required>
-                    <option value="">Select</option>
-                    <option value="Male">Male</option>
-                    <option value="Female">Female</option>
-                    <option value="Other">Other</option>
-                </select>
-
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required />
-
-                <label for="review">Review Description:</label>
-                <textarea id="review" name="review_description" rows="4" required></textarea>
-
-                <input type="submit" value="Submit Review" />
-            </form>
+    <section id="section2">
+        <h2 class="section-header">New Products:</h2>
+        <div class="section-product">
+            <div class="productCard">
+                <img src="https://thumbs.dreamstime.com/b/guava-white-background-fresh-119539859.jpg" alt="Guava" />
+                <hr />
+                <div class="product_info">
+                    <div class="namePrice">
+                        <h3 class="productName">Guava</h3>
+                        <div class="priceRow">
+                            <h4 class="oldPrice">$2.99</h4>
+                            <h4 class="newPrice">$1.99</h4>
+                        </div>
+                    </div>
+                    <i class="fa-solid fa-cart-shopping fa-xl add-to-cart"></i>
+                </div>
+            </div>
+            <div class="productCard">
+                <img src="https://healthjade.com/wp-content/uploads/2017/12/Papaya.jpg" alt="Papaya" />
+                <hr />
+                <div class="product_info">
+                    <div class="namePrice">
+                        <h3 class="productName">Papaya</h3>
+                        <div class="priceRow">
+                            <h4 class="oldPrice">$4.99</h4>
+                            <h4 class="newPrice">$3.99</h4>
+                        </div>
+                    </div>
+                    <i class="fa-solid fa-cart-shopping fa-xl add-to-cart"></i>
+                </div>
+            </div>
+            <div class="productCard">
+                <img src="https://3.imimg.com/data3/FB/DP/MY-13812857/kathal-250x250.jpg" alt="Jackfruit" />
+                <hr />
+                <div class="product_info">
+                    <div class="namePrice">
+                        <h3 class="productName">Jackfruit</h3>
+                        <div class="priceRow">
+                            <h4 class="oldPrice">$1.99</h4>
+                            <h4 class="newPrice">$1.50</h4>
+                        </div>
+                    </div>
+                    <i class="fa-solid fa-cart-shopping fa-xl add-to-cart"></i>
+                </div>
+            </div>
+            <div class="productCard">
+                <img src="https://th.bing.com/th/id/R.abbc04795492e1b7da1f01099e148aa9?rik=JGRvnhr103f6HQ&pid=ImgRaw&r=0"
+                    alt="Litchi" />
+                <hr />
+                <div class="product_info">
+                    <div class="namePrice">
+                        <h3 class="productName">Litchi</h3>
+                        <div class="priceRow">
+                            <h4 class="oldPrice">$2.99</h4>
+                            <h4 class="newPrice">$2.50</h4>
+                        </div>
+                    </div>
+                    <i class="fa-solid fa-cart-shopping fa-xl add-to-cart"></i>
+                </div>
+            </div>
         </div>
-    </main>
+    </section>
+
+    <section id="feedbackSection">
+        <h2 class="section-header">Feedback</h2>
+        <form id="feedbackForm" action="submit_feedback.php" method="post">
+            <input type="text" name="name" placeholder="Name" required />
+            <input type="email" name="gmail" placeholder="Email" required />
+            <select name="gender" required>
+                <option value="" disabled selected>Select Gender</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
+            </select>
+            <textarea name="description" placeholder="Your feedback here..." required></textarea>
+            <button type="submit">Submit Feedback</button>
+        </form>
+    </section>
+
+    <section style="height: 100px;"></section>
+
+    <footer class="footer">
+        <div>
+            <p class="footerText">Connect With Us: fahim15-4672@diu.edu.bd</p>
+        </div>
+    </footer>
+
+    <div id="drawer" class="drawer">
+        <div class="drawer-header">
+            <h2>Your Cart</h2>
+        </div>
+        <div id="drawerContent" class="drawer-content"></div>
+        <div id="totalCost" style="font-weight:bold; margin-top:15px; font-size:1.1rem;"></div>
+        <button id="closeDrawerBtn" class="close-drawer-btn">Close</button>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
