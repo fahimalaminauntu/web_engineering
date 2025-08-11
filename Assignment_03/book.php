@@ -124,7 +124,7 @@ if (isset($_GET['delete'])) {
                 <td><?= htmlspecialchars($row['genre']) ?></td>
                 <td><?= $row['bestseller'] ? '✔' : '✘' ?></td>
                 <td>
-                    <div class="action_button" style="">
+                    <div class="action_button">
                         <a href="?delete=<?= $row['id'] ?>" onclick="return confirm('Are you sure?')">
                             <button class="action-btn delete">Delete</button>
                         </a>
