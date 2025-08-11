@@ -88,7 +88,7 @@ if (isset($_GET['delete'])) {
             <option value="">Select Genre</option>
 
             <?php
-            $genres = ["Fiction", "Non-Fiction", "Science", "Fantasy", "Romance", "Biography"];
+            $genres = ["Fiction", "Historic", "Non-Fiction", "Science", "Fantasy", "Romance", "Biography"];
             foreach ($genres as $g) {
                 $selected = ($editBook && $editBook['genre'] == $g) ? 'selected' : '';
                 echo "<option value=\"$g\" $selected>$g</option>";
