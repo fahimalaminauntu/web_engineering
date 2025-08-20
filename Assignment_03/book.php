@@ -1,3 +1,5 @@
+//updated by: [Fahim Al-Amin Auntu]
+
 <?php
 $host = "localhost";
 $user = "root";
